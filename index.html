@@ -1,27 +1,62 @@
 <!DOCTYPE html>
     <html>
         <style>
-            img {
-                border-radius:50%
+            * {
+            box-sizing: border-box;
             }
-        
+
+            .header {
+                background-color:dimgray;
+                padding: 5px;
+                text-align: center;
+                }
+             .header h1 {
+                 color:white;
+             }
+
+             .column {
+                 float:left;
+                 width: 33.33%;
+                 padding: 15px;
+             }
+
+             .row:after {
+                content: "";
+                display: table;
+                clear: both;
+             }      
         </style>
-        
-        <head>
+
+    <head>
             <meta charset="UTF-8">
-        </head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-        <body>
-            <p>Hello World!</p>
+    <body>
 
-            <p>This is my first website, but this definitely wont be my last!</p>
-            <h1>MU HA HA HA!</h1>
-            <img src="laugh.jpeg" alt="evil anime laugh">
-            <br>
-            <a href="https://twitter.com/thatoduguy">Stalemate Andy</a>
-        </br>    
-            <label for="the-best">
-                <input type="checkbox" id="the-best" value="best" checked> Check if you are going to be successful
-            </label>
-        </body>
+        <div class="header">
+            <h1> W E S R O</h1>
+        </div>
+
+            <div class="row">
+
+                <div class="column">
+                    <h2>Column 1</h2>
+                    <p>This is a paragraph in the 1rd column</p>
+                </div>
+
+                <div class="column">
+                    <h2>Column 2</h2>
+                    <p> This is a paragraph in the 2rd column</p>
+                </div>
+
+                <div class="column">
+                    <h2>Column 3</h2>
+                    <p> This is a paragraph in the 3rd column</p>
+                </div>
+
+            </div>
+
+    </body>
+
     </html>
